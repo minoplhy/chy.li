@@ -6,7 +6,8 @@
     {{- $randomize := (resources.Get "js/randomize.js" ) }}
     {{- $image_array := (resources.Get "js/image-array.js" ) }}
     {{- $text_array := (resources.Get "js/text-array.js" )}}
-    {{- $randomize_combined := slice $image_array $text_array $randomize | resources.Concat "js/random.js" | resources.Minify }}
+    {{- $image_title_array := (resources.Get "js/titleimg-array.js" )}}
+    {{- $randomize_combined := slice $image_array $image_title_array $text_array $randomize | resources.Concat "js/random.js" | resources.Minify }}
 
     {{- if not site.Params.assets.disableFingerprinting }}
         {{- $randomize_combined := $randomize_combined | fingerprint }}

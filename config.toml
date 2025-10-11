@@ -1,6 +1,6 @@
-baseURL = 'https://owu.se'
+baseURL = 'https://chy.li'
 languageCode = 'en-us'
-title = "Cozy Camp owu.se Mountain（´∀｀）"
+title = "chyli. : The Fuwa-est of all time"
 theme = 'hugo-bearblog'
 
 # Generate a nice robots.txt for SEO
@@ -10,6 +10,7 @@ disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
   blog = "/blog/:slug/"
+  7 = "/7/:slug/"
   tags = "/tags/:slug"
 
 [params]
@@ -29,7 +30,7 @@ ignoreErrors = ["error-disable-taxonomy"]
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-  title = "Cozy Camp owu.se Mountain（´∀｀）"
+  title = "chyli."
 
   # This theme will, by default, inject a made-with-line at the bottom of the page.
   # You can turn it off, but we would really appreciate if you don’t :-).
@@ -41,6 +42,9 @@ ignoreErrors = ["error-disable-taxonomy"]
   # for details. An example TOML config that uses [ISO
   # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
   # dateFormat = "2006-01-02"
+  
+  # Image for title text
+  TitleImage = "/images/title/yui.webp"
 
  	# based on solutions by papermod : https://github.com/adityatelange/hugo-PaperMod/issues/89
 	# disable integrity on script,stylesheet linking

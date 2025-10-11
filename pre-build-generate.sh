@@ -1,18 +1,24 @@
 #!/bin/bash
 
-# Store file names in a Bash array
-files=($(ls static/images/weebos_avif))
+generate() {
+  local target_dir="$1"
+  local target_file="$2"
+  local args_name="$3"
 
-# Generate JavaScript code with the array
-cat /dev/null > assets/js/image-array.js
+  files=($(ls $target_dir))
+  cat /dev/null > $target_file
+  
+  echo "// This file is dynamically generated from pre-build script. Proceed with cautions when manually edit something!
+let ${args_name} = [" >> $target_file
 
-echo '// This file is dynamically generated from pre-build script. Proceed with cautions when manually edit something!
-let imgArray = [' >> assets/js/image-array.js
+  # Iterate through the file names and add them to the JavaScript array
+  for file in "${files[@]}"; do
+    echo "  \"$file\", " >> $target_file
+  done
 
-# Iterate through the file names and add them to the JavaScript array
-for file in "${files[@]}"; do
-  echo "  \"$file\", " >> assets/js/image-array.js
-done
+  # Close the JavaScript array
+  echo "];" >> $target_file
+}
 
-# Close the JavaScript array
-echo "];" >> assets/js/image-array.js
+generate "static/images/weebos_avif" "assets/js/image-array.js" "imgArray"
+generate "static/images/title" "assets/js/titleimg-array.js" "titleimgArray"

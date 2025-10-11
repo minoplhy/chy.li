@@ -128,3 +128,7 @@ details.spoiler {
 #hugo_red_highlight {
   background-color: rgb(138, 21, 21);
 }
+
+.dark-mode {
+    background-color: #0c0c0c !important;
+}

@@ -1,7 +1,22 @@
-function randomImageBroker(ElemName, imgArray) {
-  const imgELM = document.getElementById(ElemName);
-  const randomIndex = mathRandom(imgArray);
-  imgELM.src = imgArray[randomIndex];
+function randomImageBroker(ElemName, imgArray, type="id") {
+  let imgELM;
+
+  if (type === "id") {
+    imgELM = document.getElementById(ElemName);
+  } else {
+    imgELM = document.getElementsByClassName(ElemName);
+  }
+
+  const randomIndex = Math.floor(Math.random() * imgArray.length);
+  const randomImage = imgArray[randomIndex];
+
+  if (type === "id") {
+    imgELM.src = randomImage;
+  } else {
+    for (const el of imgELM) {
+      el.src = randomImage;
+    }
+  }
 }
 
 function randomTextBroker(ElemName, textArray) {
@@ -15,10 +30,12 @@ function mathRandom(srcArray) {
 }
 
 base_path = "/images/weebos_avif/";
+base_path_titleimg = "/images/title/";
 //file_extension = ".avif"
 
 // Create a new array to store the modified strings
 imgArray = imgArray.map(img_path => base_path + img_path);
+titleimgArray = titleimgArray.map(img_path => base_path_titleimg + img_path);
 
 //console.log(imgArray)
 
@@ -30,4 +47,5 @@ img.style.display = "block";
 //document.getElementById("p1").innerHTML = "New tererxt!";
 
 document.onload = randomImageBroker('random-img', imgArray);
+document.onload = randomImageBroker('title-image', titleimgArray, "class");
 randomTextBroker('random-text', text_array)
