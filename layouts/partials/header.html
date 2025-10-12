@@ -1,0 +1,27 @@
+<div class="title-container">
+  {{ if .Site.Params.TitleImage }}
+  <noscript>
+  <a href="{{ "" | relURL }}" class="image-link">
+    <img
+      src="{{ .Site.Params.TitleImage }}"
+      alt="{{ .Site.Title }} logo"
+      class="title-image"
+    >
+  </a>
+  </noscript>
+  <a href="{{ "" | relURL }}" class="image-link">
+    <img
+      alt="{{ .Site.Title }} logo"
+      class="title-image"
+    >
+  </a>
+  {{ end }}
+
+  <a href="{{ "" | relURL }}" class="title">
+    <h2>{{ .Site.Title }}</h2>
+  </a>
+</div>
+
+<center><nav class="centered-nav">
+  {{ partial "nav.html" . }}
+</nav></center>

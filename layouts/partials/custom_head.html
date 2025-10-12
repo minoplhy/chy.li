@@ -7,9 +7,11 @@
     {{- $image_array := (resources.Get "js/image-array.js" ) }}
     {{- $text_array := (resources.Get "js/text-array.js" )}}
     {{- $image_title_array := (resources.Get "js/titleimg-array.js" )}}
+    {{- $titlegallery_array := (resources.Get "js/titlegallery-array.js" )}}
     {{- $frontpage_load := (resources.Get "js/frontpage-load.js" )}}
-    {{- $titleimg_load := (resources.Get "js/titleimg-load.js" )}}    
-    {{- $randomize_combined := slice $image_array $image_title_array $text_array $randomize $frontpage_load $titleimg_load | resources.Concat "js/random.js" | resources.Minify }}
+    {{- $titleimg_load := (resources.Get "js/titleimg-load.js" )}}
+    {{- $titlegallery_load := (resources.Get "js/titlegallery-load.js" )}}
+    {{- $randomize_combined := slice $image_array $image_title_array $text_array $titlegallery_array $randomize $frontpage_load $titleimg_load $titlegallery_load | resources.Concat "js/random.js" | resources.Minify }}
 
     {{- if not site.Params.assets.disableFingerprinting }}
         {{- $randomize_combined := $randomize_combined | fingerprint }}

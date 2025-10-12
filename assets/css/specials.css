@@ -132,3 +132,49 @@ details.spoiler {
 .dark-mode {
     background-color: #0c0c0c !important;
 }
+
+.home-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.home-flex figure {
+  text-align: center;
+  margin: 0;
+}
+
+.home-flex .about {
+  max-width: 480px;
+}
+
+.home-flex .slider {
+  flex: 0 0 160px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.home-flex .slider img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home-flex .slider img.active {
+  opacity: 1;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .home-flex { flex-direction: column; align-items: center; }
+  .home-flex .slider { flex: 0 0 auto; width: 200px; margin-top: 1rem; }
+}
