@@ -33,6 +33,18 @@
     {{ end }}
 {{ end }}
 
+{{ if (.Eq (site.GetPage "/findme")) }}
+    {{- $solve_js := (resources.Get "js/email/solve.js" ) }}  
+    {{- $solve_combined := slice $solve_js | resources.Concat "js/solve.js" | resources.Minify }}
+
+    {{- if not site.Params.assets.disableFingerprinting }}
+        {{- $solve_combined := $solve_combined | fingerprint }}
+        <script defer crossorigin="anonymous" src="{{ $solve_combined.RelPermalink }}" integrity="{{ $solve_combined.Data.Integrity }}"></script>
+    {{ else }}
+        <script defer crossorigin="anonymous" src="{{ $solve_combined.RelPermalink }}"></script>
+    {{ end }}
+{{ end }}
+
 {{- /* specials CSS stylesheet */}}
 {{- $special_stylesheet := (resources.Get "css/specials.css") | resources.Minify }}
 {{- if not site.Params.assets.disableFingerprinting }}

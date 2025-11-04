@@ -22,3 +22,4 @@ let ${args_name} = [" >> $target_file
 
 generate "static/images/weebos_avif" "assets/js/image-array.js" "imgArray"
 generate "static/images/title" "assets/js/titleimg-array.js" "titleimgArray"
+generate "static/images/titlegallery" "assets/js/titlegallery-array.js" "galleryArray"

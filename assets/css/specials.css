@@ -56,8 +56,33 @@ details.spoiler summary::after {
   content: ' \203A';
   margin-left: 5px;
 }
-  
-details.spoiler {
+
+.spoiler {
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #f3a8a8;
+  background-color: #fff3f3;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spoiler[open] {
+  background-color: #ffebeb;
+  border-color: #ff6b6b;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.dark-mode .spoiler {
+  background-color: #a70000;
+}
+
+.dark-mode .spoiler[open] {
+  background-color: #300000;
+}
+
+details.spoiler-seven {
   display: inline-block;
 }
 

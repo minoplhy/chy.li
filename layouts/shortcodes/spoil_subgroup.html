@@ -1,7 +1,7 @@
 {{ $date := time (.Get "date") }}
 {{ $formatted := $date.Format "02 Jan, 2006" }}
 
-<details class="spoiler">
+<details class="spoiler spoiler-seven">
     <summary>📅 {{ $formatted }}</summary>
     <div class="spoiler-subgroup-content">
         <pre>{{ .Inner | safeHTML }}</pre>

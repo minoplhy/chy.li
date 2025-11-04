@@ -1,0 +1,6 @@
+{{ $TITLE := (.Get "title") }}
+
+<details class="spoiler">
+    <summary><h3>{{ $TITLE | safeHTML }}</h3></summary>
+      {{ .Inner | safeHTML }}
+</details>
