@@ -50,3 +50,12 @@ ignoreErrors = ["error-disable-taxonomy"]
 	# disable integrity on script,stylesheet linking
 	[params.assets]
 	#  disableFingerprinting = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]

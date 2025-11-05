@@ -158,6 +158,18 @@ details.spoiler-seven {
     background-color: #0c0c0c !important;
 }
 
+.dark-mode a {
+  color: #3ffcc0;
+}
+
+a {
+  color: #fc4747;
+}
+
+.dark-mode code {
+  background-color: #2b0021;
+}
+
 .home-flex {
   display: flex;
   align-items: flex-start;

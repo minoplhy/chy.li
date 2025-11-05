@@ -5,30 +5,57 @@ date = 2024-03-10T14:16:32+00:00
 slug = "findme"
 
 description = "some Information about myself, I guess? ヽ༼ຈل͜ຈ༽ﾉ "
+
+[params]
+  math = true
 +++
 
+## E-Mail
+
 {{< spoil title="Click to see email">}}
-This is not traditional way, but here we are :)
+<p>This is not traditional way, but here we are :)</p>
+<p>So, The email is encoded by a simple Mathematical Formula as defined here:</p>
+<h1>
+$$
+encipher_{i}=n*(x_{i}^{(n-2)})*(n-1)
+$$
+</h1>
+<p><b>\(x\)</b> is a numberic input where it was convert from string to decimal ASCII</p>
+<p><b>\(n\)</b> is a static number</p>
+<p><b>\(i\)</b> is i for i in range full encipher output</p>
 
+<h3>How to solve this?</h3>
+<p>This is a simple cipher, so technically you can computationally solve this in no time. You can see a large gibberish-alike numberic below, this constant of \(i\) different output of \(encipher\) operation. And to ensure that your answer is correct, <b>here is sha256 of the <del>flag</del> E-Mail </b></p>
+
+<pre><code id="email-sha256">cff427d2ca8ade3416cc2a44df3b0cda7ab03d0710779378b33030f26d21ad06</code></pre>
+
+<pre>In doubt about all these? Please contact via E-Mail given below</pre>
+
+<h2>E-Mail is here</h2>
 <pre tabindex="0"><code id="email-code">4502571661804443184744023304164362112865179435324845572141226765984201284360067044793561562491353542672032481817398053136877868274929675248004377252170634708114998861433747417992782500441975652364230737301187023436033938858365709178827882962725634500-22411374776308414055788127771735926723556344644454119235887477723326338237746471295253015437018145255961045460594381796843986483927610910560364325310232404300634797782006835132864408127302095196015738404824030832982472261632000-16651883285457787823893898164764305636898728079048466102664713960053609869290793255075162937059520021177541386785420517037930722402322286936760886274220000360956191295455278299866182471586056397048133252962774090500-52357662178290657020737855164119143466766733527566701742347904405182178286973000851861017726003836837842496953908194193268646951185595187343939355049465563425786401785609924312631347917304399399850275596175470776550106237774947216564008227961899324033703500-85040334939332543339478273584186827575904352885560410179944013838573576396497612065783101164299682451473071694226578913676624064937984000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-51232434678941733957736076204877608428125768964830487796245590992937204978226695594329785875297473778957082702897215678594481255220413138660346383549329958046173902944934795505559129147547836470236343697408000-1912634444246243093647869372278466137008693546585860437298172693103025042280233632522129045643544041223732907455401518555781624230500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-200195182806663028294794650074186548142176912712574707407306716748949959244403595164825546050896063405395359230012076426540077864917314403670406938422210320214571520247135082661913828614152383263010571360337235433232908110473404433311456347249637851136000</code></pre>
-
-<button id="email-solve" type="button">Click Me!</button> 
+<h4>Don't want a fun? click below</h4>
+<button id="email-solve" type="button">Decipher</button> 
 <pre id="email-solved"></pre>
 {{< /spoil >}}
-PGP Key -> `21D18F8C0BE428F50A3380BB41D406044E2434BF`
+
+## PGP Key
+* Fingerprint: `21D1 8F8C 0BE4 28F5 0A33 80BB 41D4 0604 4E24 34BF`
 {{< rawhtml >}}
 <pre>
-<a href="/misc/c_pgp.txt">Here</a>, <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/21D18F8C0BE428F50A3380BB41D406044E2434BF">openpgp</a>
+<h3>Download Key: <a href="/misc/c_pgp.txt">Here</a>, <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/21D18F8C0BE428F50A3380BB41D406044E2434BF">openpgp</a></h3><h3>Preferred.</h3>
 </pre>
 {{< /rawhtml >}}
 
-PGP Key -> `923DFF2B99B75D731C55BF7490667A59A9908AEC`
-
+* Fingerptint: `923D FF2B 99B7 5D73 1C55 BF74 9066 7A59 A990 8AEC`
 {{< rawhtml >}}
 <pre>
-<a href="/misc/hej_pgp.txt">Here</a>, <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/923DFF2B99B75D731C55BF7490667A59A9908AEC">openpgp</a>
+<h3>Download Key: <a href="/misc/hej_pgp.txt">Here</a>, <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/923DFF2B99B75D731C55BF7490667A59A9908AEC">openpgp</a></h3>
 </pre>
-<br>
 {{< /rawhtml >}}
-
-##### on : [GitHub](https://github.com/minoplhy), [owu.se/p-p](https://owu.se/p-p/explore/repos), [Framagit](https://framagit.org/meeillo), [Codeberg](https://codeberg.org/DoulpaGllo)
+## Git Social Media
+* [GitHub/minoplhy](https://github.com/minoplhy)
+* [chy.li/p-p/minoplhy](https://chy.li/p-p/minoplhy)
+* [GitLab/minoplhy](https://gitlab.com/minoplhy)
+* [GitLab.AlpineLinux/minoplhy](https://gitlab.alpinelinux.org/minoplhy)
+* [Framagit/meeillo](https://framagit.org/meeillo)
+* [Codeberg/DoulpaGllo](https://codeberg.org/DoulpaGllo)

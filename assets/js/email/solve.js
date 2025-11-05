@@ -10,11 +10,11 @@ document.getElementById('email-solve').addEventListener('click', async function(
   let f = document.getElementById('email-code').innerText;
 
   if (!f) {
-    alert('Please enter the email code');
+    alert('ERROR: email-code not found');
     return;
   }
 
-  const targetHash = 'cff427d2ca8ade3416cc2a44df3b0cda7ab03d0710779378b33030f26d21ad06';
+  const targetHash = document.getElementById('email-sha256').innerText;;
   let n = 0;
   let found = false;
 
