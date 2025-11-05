@@ -71,7 +71,7 @@ details.spoiler summary::after {
   background-color: #ffebeb;
   border-color: #ff6b6b;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  transform: scale(1.02);
+  transform: scale(1.00);
 }
 
 .dark-mode .spoiler {
@@ -189,7 +189,7 @@ a {
 }
 
 .home-flex .slider {
-  flex: 0 0 160px;
+  flex: 0 0 203px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0,0,0,0.4);
@@ -214,4 +214,17 @@ a {
 @media (max-width: 768px) {
   .home-flex { flex-direction: column; align-items: center; }
   .home-flex .slider { flex: 0 0 auto; width: 200px; margin-top: 1rem; }
+}
+
+.math-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.math-responsive .katex-display {
+  display: inline-block;
+  max-width: 100%;
+  transform-origin: center center;
 }
