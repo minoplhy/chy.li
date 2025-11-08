@@ -21,12 +21,12 @@ encipher_{i}=n*(x_{i}^{(n-2)})*(n-1)
 $$
 </h1>
 <ul>
-<li><p><b>\(x\)</b> represent a numberic input where it was convert from string to decimal ASCII</p></li>
+<li><p><b>\(x\)</b> represent a numeric input where it was converted from string to decimal ASCII values</p></li>
 <li><p><b>\(n\)</b> represent a certain static number</p></li>
 <li><p><b>\(i\)</b> represent an i for i in range full encipher output</p></li>
 </ul>
 <h3>How to solve this?</h3>
-<p>This is a simple cipher, so technically you can computationally solve this in no time. You can see a large gibberish-alike numberic below, this constant of \(i\) different output of \(encipher\) operation. And to confirm that your answer is correct, <b>here is sha256 of the <del>flag</del> E-Mail </b></p>
+<p>This is a simple cipher, so technically you can computationally solve this in no time. You can see a large gibberish-alike numeric below, this constant of \(i\) different output of \(encipher\) operation. And to confirm that your answer is correct, <b>here is sha256 of the <del>flag</del> E-Mail </b></p>
 
 <pre><code id="email-sha256">cff427d2ca8ade3416cc2a44df3b0cda7ab03d0710779378b33030f26d21ad06</code></pre>
 
@@ -50,7 +50,7 @@ $$
 </pre>
 {{< /rawhtml >}}
 
-* Fingerptint: `923D FF2B 99B7 5D73 1C55 BF74 9066 7A59 A990 8AEC`
+* Fingerprint: `923D FF2B 99B7 5D73 1C55 BF74 9066 7A59 A990 8AEC`
 {{< rawhtml >}}
 <pre>
 <h3>Download Key: <a href="/misc/hej_pgp.txt">Here</a>, <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/923DFF2B99B75D731C55BF7490667A59A9908AEC">openpgp</a></h3>

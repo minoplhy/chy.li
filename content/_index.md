@@ -15,7 +15,7 @@ title = "Homepage (✿◠‿◠)"
   <div class="about"> 
     <h2>About Me</h2>     
     <p><a href="{{< ref "/findme" >}}">find me</a></p>
-    <p>Hello This is <b>Chy-li</b> Also Known As <b>minoplhy</b>, <b>owu-se</b>, <b>aspoblourib</b>, <b>Wa-ii</b>, <b>clubbyblurry of 1w1.one</b>, <b>Crappy</b> andddddddd much more. . .</p>
+    <p>Hello This is <img src="/images/chyli.gif" width=80 height=40/><b>(Chy-li)</b> Also Known As <b>minoplhy</b>, <b>owu-se</b>, <b>aspoblourib</b>, <b>Wa-ii</b>, <b>clubbyblurry of 1w1.one</b>, <b>Crappy</b> andddddddd much more. . .</p>
     <p>I initially start this site as an empty landing page back in ~2020. When <code>.one</code> was still cheap. IYKYK it doesn't ended well 😭 And I've been seasonal domain <b>hopper</b> since then. Nowadays this site is mainly use for Personal ranting spaces and Gitea stuff, But i tend to host some public service in the future. So Please Stay Tuned :)</p>
     <p>I have particular interests in</p> 
     <b><ul>
