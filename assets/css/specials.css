@@ -131,15 +131,14 @@ details.spoiler-seven {
 }
   
 .generic-banner{
-    background-color: rgb(113, 188, 148);
-    color: white;
+    background-color: #fff3f3;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
 .dark-mode .generic-banner {
-    background-color: rgb(175, 53, 42);
+    background-color: #a70000;
     color: white;
     padding: 10px;
     margin-bottom: 10px;
@@ -163,7 +162,7 @@ details.spoiler-seven {
 }
 
 a {
-  color: #fc4747;
+  color: #c71e1e;
 }
 
 .dark-mode code {

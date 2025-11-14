@@ -3,7 +3,7 @@ title =  "Transition: new year, new domain, new Jekyll site, new servers, and 15
 date =   2023-06-09T12:00:00+00:00
 slug = "big-migration-2023"
 
-tags = ["blog",]
+tags = ["blog","migration",]
 +++
 
 <b>Happy New Year, 2023!</b> Well, it's a little too late, though. It's been June now. and that brings back a memory of something that I've totally forgotten all the time since New Year's Day. 

@@ -1,9 +1,10 @@
 // This file is dynamically generated from pre-build script. Proceed with cautions when manually edit something!
 let titleimgArray = [
-  "anon.webp", 
+  "an.avif", 
+  "anon.avif", 
   "bocchi.webp", 
   "cirno.webp", 
-  "marisa.webp", 
+  "reimu.avif", 
   "rin.webp", 
   "yui.webp", 
 ];

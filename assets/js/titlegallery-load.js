@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     galleryArray.forEach((src, index) => {
       const img = document.createElement("img");
+      img.alt = "Fumo Fumo";
       img.dataset.src = src;
       if (index === 0) {
         img.src = src; // only load the first one immediately
