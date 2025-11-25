@@ -5,7 +5,7 @@ date = "2025-11-14T12:00:00"
 #
 # lastmod is optional
 #
-# lastmod = "Timestamp that you edit this blog"
+lastmod = "2025-11-25T12:00:00"
 
 #
 # description is optional
@@ -104,10 +104,9 @@ At the time of writing, I've briefly checked on what migration to perform. Which
 
 TODO:
 
-* **Blog Post and 7**: Need to change the domain for every blog post 
+~~* **Blog Post and 7**: Need to change the domain for every blog post~~ DONE
 
 # Action Required!
-*NOT FINALIZE, can skip for now*
 * **Gitea**: Replace old git remote domain to `chy.li`
 * **Hugo Theme**: change submodule url to new one
 
@@ -115,6 +114,7 @@ TODO:
 
 ***YOU ARE HERE***
 
+* ***EDIT: as of 25th Nov**: Gitea has been redirected to chy.li*
 * **Now—30 Nov 2025**: Nothing happen...Migration happens in background
 * **1 December 2025**: Every services has migrated over
 * **1 December 2025—1 May 2026**: Redirect owu.se/X to chy.li/X

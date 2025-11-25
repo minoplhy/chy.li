@@ -120,7 +120,7 @@ This is more complex than the Static one but let's see how DHCP works from a gra
 
 This meant that the Server would annonce the `DHCP Discovery` on the interface Port 67, and what we need to do is to simulate the DHCP server as it's simpler than setting up the actual DHCP server on your server so...
 
-After some researching and ~~GPTing~~ I managed to came up with Python script that recreate DHCP packet on our PC side [Here](https://owu.se/p-p/minoplhy/codes/src/branch/main/no-network-monitor-no-problem/dhcp.py)
+After some researching and ~~GPTing~~ I managed to came up with Python script that recreate DHCP packet on our PC side [Here](https://chy.li/p-p/minoplhy/codes/src/branch/main/no-network-monitor-no-problem/dhcp.py)
 
 The script setup IP Address as `192.168.1.123`, gateway `192.168.1.1`
 
