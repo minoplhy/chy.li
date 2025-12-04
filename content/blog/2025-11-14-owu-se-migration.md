@@ -5,7 +5,7 @@ date = "2025-11-14T12:00:00"
 #
 # lastmod is optional
 #
-lastmod = "2025-12-03T12:00:00"
+lastmod = "2025-12-04T12:00:00"
 
 #
 # description is optional
@@ -115,8 +115,10 @@ TODO:
 
 * ***EDIT: as of 25th Nov**: Gitea has been redirected to chy.li*
 * **Now—30 Nov 2025**: Nothing happen...Migration happens in background
-***YOU ARE HERE***
 * **1 December 2025**: Every services has migrated over
+
+***YOU ARE HERE***
+
 * **1 December 2025—1 May 2026**: Redirect owu.se/X to chy.li/X
 * **1 May 2026—1 July 2026**: Sending 410 Gone
 * **1 July 2026**: remove A/AAAA records from owu.se
